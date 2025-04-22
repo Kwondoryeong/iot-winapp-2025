@@ -1,4 +1,4 @@
-﻿namespace WinFormsApp1
+﻿namespace SyntaxWinApp01
 {
     partial class FrmMain
     {

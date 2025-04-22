@@ -28,130 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             BtnMsg = new Button();
-            LblPain = new Label();
-            TxtPain = new TextBox();
-            LblPainPoint = new Label();
-            CboPainPoint = new ComboBox();
-            TxtResult = new TextBox();
-            BtnDisplay = new Button();
-            BtnWhile = new Button();
             SuspendLayout();
             // 
             // BtnMsg
             // 
-            BtnMsg.BackColor = SystemColors.ButtonShadow;
-            BtnMsg.ForeColor = SystemColors.MenuHighlight;
-            BtnMsg.Image = (Image)resources.GetObject("BtnMsg.Image");
-            BtnMsg.Location = new Point(472, 262);
+            BtnMsg.BackColor = SystemColors.ControlLightLight;
+            BtnMsg.ForeColor = Color.Red;
+            BtnMsg.Location = new Point(472, 259);
             BtnMsg.Name = "BtnMsg";
             BtnMsg.Size = new Size(100, 40);
-            BtnMsg.TabIndex = 6;
+            BtnMsg.TabIndex = 0;
             BtnMsg.Text = "메시지";
             BtnMsg.UseVisualStyleBackColor = false;
             BtnMsg.Click += BtnMsg_Click;
-            // 
-            // LblPain
-            // 
-            LblPain.AutoSize = true;
-            LblPain.Location = new Point(12, 11);
-            LblPain.Name = "LblPain";
-            LblPain.Size = new Size(64, 15);
-            LblPain.TabIndex = 1;
-            LblPain.Text = "통증여부 -";
-            LblPain.Click += label1_Click;
-            // 
-            // TxtPain
-            // 
-            TxtPain.Location = new Point(80, 8);
-            TxtPain.Name = "TxtPain";
-            TxtPain.PlaceholderText = "네 또는 아니오";
-            TxtPain.Size = new Size(121, 23);
-            TxtPain.TabIndex = 1;
-            TxtPain.KeyPress += TxtPain_KeyPress;
-            // 
-            // LblPainPoint
-            // 
-            LblPainPoint.AutoSize = true;
-            LblPainPoint.Location = new Point(12, 45);
-            LblPainPoint.Name = "LblPainPoint";
-            LblPainPoint.Size = new Size(64, 15);
-            LblPainPoint.TabIndex = 3;
-            LblPainPoint.Text = "통증부위 -";
-            // 
-            // CboPainPoint
-            // 
-            CboPainPoint.FormattingEnabled = true;
-            CboPainPoint.Items.AddRange(new object[] { "가슴", "눈", "머리", "배", "손목", "코" });
-            CboPainPoint.Location = new Point(80, 42);
-            CboPainPoint.Name = "CboPainPoint";
-            CboPainPoint.Size = new Size(121, 23);
-            CboPainPoint.Sorted = true;
-            CboPainPoint.TabIndex = 2;
-            CboPainPoint.Text = "부위선택";
-            CboPainPoint.SelectedIndexChanged += CboPainPoint_SelectedIndexChanged;
-            // 
-            // TxtResult
-            // 
-            TxtResult.Location = new Point(12, 73);
-            TxtResult.Multiline = true;
-            TxtResult.Name = "TxtResult";
-            TxtResult.Size = new Size(556, 182);
-            TxtResult.TabIndex = 3;
-            // 
-            // BtnDisplay
-            // 
-            BtnDisplay.BackColor = SystemColors.Info;
-            BtnDisplay.ForeColor = SystemColors.ActiveCaptionText;
-            BtnDisplay.Location = new Point(366, 262);
-            BtnDisplay.Name = "BtnDisplay";
-            BtnDisplay.Size = new Size(100, 40);
-            BtnDisplay.TabIndex = 5;
-            BtnDisplay.Text = "구구단";
-            BtnDisplay.UseVisualStyleBackColor = false;
-            BtnDisplay.Click += BtnDisplay_Click;
-            // 
-            // BtnWhile
-            // 
-            BtnWhile.BackColor = SystemColors.GradientInactiveCaption;
-            BtnWhile.ForeColor = SystemColors.ActiveCaptionText;
-            BtnWhile.Location = new Point(260, 262);
-            BtnWhile.Name = "BtnWhile";
-            BtnWhile.Size = new Size(100, 40);
-            BtnWhile.TabIndex = 4;
-            BtnWhile.Text = "반복";
-            BtnWhile.UseVisualStyleBackColor = false;
-            BtnWhile.Click += BtnWhile_Click;
             // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(584, 311);
-            Controls.Add(BtnWhile);
-            Controls.Add(BtnDisplay);
-            Controls.Add(TxtResult);
-            Controls.Add(CboPainPoint);
-            Controls.Add(LblPainPoint);
-            Controls.Add(TxtPain);
-            Controls.Add(LblPain);
             Controls.Add(BtnMsg);
             Name = "FrmMain";
-            Text = "문법학스 윈앱 02";
+            Text = "문법학습 윈앱 02";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Button BtnMsg;
-        private Label LblPain;
-        private TextBox TxtPain;
-        private Label LblPainPoint;
-        private ComboBox CboPainPoint;
-        private TextBox TxtResult;
-        private Button BtnDisplay;
-        private Button BtnWhile;
     }
 }

@@ -1,5 +1,8 @@
 namespace SyntaxWinApp02
 {
+    /// <summary>
+    /// ì—°ì‚°ì í•™ìŠµ ìœˆì•±
+    /// </summary>
     public partial class FrmMain : Form
     {
         public FrmMain()
@@ -9,109 +12,15 @@ namespace SyntaxWinApp02
 
         private void BtnMsg_Click(object sender, EventArgs e)
         {
-            // ¿¬»êÀÚ : =, +, 0, *, /, %, ^,
+            // ì—°ì‚°ì : =, +, -, *, /, %, +=, -=, *= 
             // &&, ||, &, |, ^, !
-            //int val = 2 ^ 10;
+            // C, C++ ì™€ ë™ì¼
+            int val = 2 ^ 10;
 
-            //int result = 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2;
+            int result = 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2;
 
-            //MessageBox.Show(result.ToString(), "¾Ë¸²", MessageBoxButtons.OKCancel);
-            //MessageBox.Show(val.ToString(), "¾Ë¸²", MessageBoxButtons.OKCancel);
-
-            // ºĞ±â¹®
-            // if else ¹®
-            if (TxtPain.Text == "¾Æ´Ï¿À")
-            {
-                MessageBox.Show("º´¿øÀ» ¿Ö ¿Ô¾î. Áı¿¡°¡!");
-            }
-            else if (TxtPain.Text == "³×" || TxtPain.Text == "¿¹")
-            {
-                string PainPoint = CboPainPoint.SelectedItem.ToString();
-                // switch¹®
-                switch (PainPoint)
-                {
-                    case "¸Ó¸®":
-                        MessageBox.Show("½Å°æ°ú·Î °©´Ï´Ù", "Áø·á°ú¼±ÅÃ");
-                        break;
-                    case "´«":
-                        MessageBox.Show("¾È°ú·Î °©´Ï´Ù", "Áø·á°ú¼±ÅÃ");
-                        break;
-                    case "ÄÚ":
-                        MessageBox.Show("ÀÌºñÀÎÈÄ°ú·Î °©´Ï´Ù", "Áø·á°ú¼±ÅÃ");
-                        break;
-                    case "°¡½¿":
-                    //MessageBox.Show("³»°ú·Î °©´Ï´Ù", "Áø·á°ú¼±ÅÃ");
-                    //break;
-                    case "¹è":
-                        MessageBox.Show("³»°ú·Î °©´Ï´Ù", "Áø·á°ú¼±ÅÃ");
-                        break;
-                    case "¼Õ¸ñ":
-                        MessageBox.Show("Á¤Çü¿Ü°ú·Î °©´Ï´Ù", "Áø·á°ú¼±ÅÃ");
-                        break;
-                }
-            }
-            else
-            {
-                MessageBox.Show("ÅëÁõ¿©ºÎ¸¦ ÀÔ·ÂÇÏ¼¼¿ä!!");
-                TxtPain.Focus();
-            }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtPain_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // KeyPress¿¡¼­ Enter¸¦ ÀÔ·ÂÇÏ¸é 
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                MessageBox.Show(TxtPain.Text, "ÀÔ·Â°ª ");
-            }
-        }
-
-        private void CboPainPoint_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // var µ¿Àûº¯¼ö
-            //var selectedPointItem = CboPainPoint.SelectedItem;
-            //var selectedPointIndex = CboPainPoint.SelectedIndex;
-            //MessageBox.Show(selectedPointItem.ToString() + '\n' + selectedPointIndex.ToString(), "ÅëÁõºÎÀ§");
-
-        }
-
-        private void BtnDisplay_Click(object sender, EventArgs e)
-        {
-            // for¹®
-            for (int x = 2; x < 10; x++)
-            {
-                for (int y = 1; y < 10; y++)
-                {
-                    var result = x + "x" + y + "=" + (x * y);
-                    TxtResult.Text += result + " ";
-                }
-                TxtResult.Text += "\r\n"; // ¿ø·¡ À©µµ¿ì´Â \r\n °°ÀÌ ½á¾ßÇÔ
-            }
-        }
-
-        private void BtnWhile_Click(object sender, EventArgs e)
-        {
-            
-        int clickNum = 0;
-            // ¹«ÇÑ ¹İº¹
-            while (true)
-            {
-                MessageBox.Show("5±îÁö °è¼Ó : " + clickNum);
-                clickNum++;
-
-                if(clickNum >= 5)
-                {
-                    break;
-                    // ¹İº¹¹® Å»Ãâ for, foreach, while¹®¿¡ »ç¿ë°¡´É
-                    // continue; µµ ÆÄ¾ÇÇÒ °Í
-                    // goto; ´Â À¢¸¸ÇÏ¸é ¾²Áö ¸»°Í
-                }
-            }
+            //MessageBox.Show(((3 > 2) && (10 < 9)).ToString(), "ì•Œë¦¼", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(result.ToString(), "ì•Œë¦¼", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

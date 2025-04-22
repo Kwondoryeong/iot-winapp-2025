@@ -1,4 +1,4 @@
-namespace SyntaxWinApp04
+ï»¿namespace SyntaxWinApp04
 {
     public partial class FrmMain : Form
     {
@@ -11,25 +11,32 @@ namespace SyntaxWinApp04
         {
             if (TxtName.Text == "" || TxtAge.Text == "")
             {
-                MessageBox.Show("???? ????????.");
-                return; // ¸Ş¼­µå Å»Ãâ
+                MessageBox.Show("ê°’ì„ ì±„ì›Œì£¼ì„¸ìš”.");
+                return; // ë©”ì„œë“œ íƒˆì¶œ
             }
             else
             {
-                // À§ÀÇ ¹®Á¦°¡ ¾øÀ» ¶§ µ¿ÀÛ...
-                LblResult.Text = "Ã³¸®°á°ú : ";
-                TxtResult.Text = "¸Õ°¡ Ã³¸®µÉ °ÅÀÓ";
-                string name = TxtName.Text.Trim(); // ¾ÕµÚ ¿©¹éÀ» Á¦°Å
-                // ÆÄ½Ì -> ºĞ¼®ÇØ¼­ Çü º¯È¯
+                // ìœ„ì˜ ë¬¸ì œê°€ ì—†ì„ë•Œ ë™ì‘...
+                LblResult.Text = "ì²˜ë¦¬ê²°ê³¼ : ";
+                TxtResult.Text = "ë¨¼ê°€ ì²˜ë¦¬ë  ê±°ì„";
+
+                string name = TxtName.Text.Trim();  // ì•ë’¤ ì—¬ë°±ì„ ì œê±°
+                // íŒŒì‹± -> ë¶„ì„í•´ì„œ í˜• ë³€í™˜
                 DateTime birthday = DateTime.Parse(TxtAge.Text.Trim());
                 int age = DateTime.Now.Year - birthday.Year;
-                // 3Ç×½Ä ºĞ±â
-                string gender = RdoMale.Checked ? "³²" : "¿©";
+                // 3í•­ì‹ ë¶„ê¸°
+                string gender = RdoMale.Checked ? "ë‚¨" : "ì—¬";
 
-                TxtResult.Text = "Àú´Â " + name + "ÀÌ°í, " + birthday + "¿¡ ÅÂ¾î³­ " + age + "»ì " + gender + "ÀÚ ÀÔ´Ï´Ù.";
-                
+                // ì˜›ë‚  ë°©ì‹ ë¬¸ìì—´ í¬ë§·íŒ…
+                TxtResult.Text = "ì €ëŠ” " + name + "ì´ê³ ," + birthday + "ì— íƒœì–´ë‚œ " + age + "ì‚´ " + gender + "ìì…ë‹ˆë‹¤.";
+                // ìµœì‹ ë°©ì‹ ë¬¸ìì—´ í¬ë§·íŒ… $""
+                TxtResult.Text = $"ì €ëŠ” {name}ì´ê³ , {birthday:yyyy-MM-dd}ì¼ì— íƒœì–´ë‚œ {age:F1}ì‚´ {gender}ìì…ë‹ˆë‹¤!!";
             }
-                
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
