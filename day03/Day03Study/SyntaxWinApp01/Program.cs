@@ -1,4 +1,4 @@
-namespace SyntaxWinApp04
+namespace SyntaxWinApp01
 {
     internal static class Program
     {

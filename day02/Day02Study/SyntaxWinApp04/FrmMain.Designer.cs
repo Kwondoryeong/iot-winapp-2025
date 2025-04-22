@@ -1,6 +1,6 @@
 ﻿namespace SyntaxWinApp04
 {
-    partial class Form1
+    partial class FrmMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -63,7 +63,7 @@
             Lblage.Name = "Lblage";
             Lblage.Size = new Size(62, 15);
             Lblage.TabIndex = 0;
-            Lblage.Text = "나이입력 :";
+            Lblage.Text = "생년월일 :";
             // 
             // TxtAge
             // 
@@ -129,7 +129,7 @@
             TxtResult.Size = new Size(482, 23);
             TxtResult.TabIndex = 4;
             // 
-            // Form1
+            // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -144,7 +144,7 @@
             Controls.Add(Lblage);
             Controls.Add(TxtName);
             Controls.Add(LblName);
-            Name = "Form1";
+            Name = "FrmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "문법연습 윈앱 04";
             ResumeLayout(false);

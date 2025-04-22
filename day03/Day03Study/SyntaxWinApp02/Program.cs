@@ -1,4 +1,4 @@
-namespace SyntaxWinApp04
+namespace SyntaxWinApp02
 {
     internal static class Program
     {
@@ -13,5 +13,5 @@ namespace SyntaxWinApp04
             ApplicationConfiguration.Initialize();
             Application.Run(new FrmMain());
         }
-    }
+    }    
 }
