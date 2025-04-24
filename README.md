@@ -557,7 +557,7 @@ IoT 개발자 C#/WinApp 리포지토리 2025
         - 실제 실무에서는
             - FrmMain() 생성자, FrmMain_Load(), FrmMain_FormClosing()으로 대부분 작업
 
-    <img src="./image/cs0011.png" width="600">
+        <img src="./image/cs0011.png" width="600">
 
 - 고급 문법
     1. 람다식 - C# 3.0에서 도입 - [소스](./day05/Day05Study/SyntaxWinApp02/FrmMain.cs)
@@ -596,6 +596,7 @@ IoT 개발자 C#/WinApp 리포지토리 2025
         // 3. FrmMain.resx 특이케이스
         {
         ```
+
     5. 제네릭 : Generic
         - 파이썬에는 필요없음 -> 타입지정이 자유로움
         - Java, C# 등의 엄격한(strict)데이터타입 객체지향
