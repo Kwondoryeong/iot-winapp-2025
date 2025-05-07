@@ -1109,6 +1109,6 @@ IoT 개발자 C#/WinApp 리포지토리 2025
 
     <img src="./image/tp_check.png" width="600">
 
-    - 정답이 맞는 경우 정답확인 횟수와 완료게임 횟수 가 카운트, 정답 메세지 창 팝업
+    - 정답이 맞는 경우 정답확인 횟수와 완료게임 횟수 카운트, 정답 메세지 창 팝업
 
     <img src="./image/tp_finish.png" width="600">
