@@ -1076,4 +1076,39 @@ IoT 개발자 C#/WinApp 리포지토리 2025
 
 ## 10일차
 
-### 코딩테스트
+### Toy Project 
+#### 스도쿠 게임
+
+- 기본 화면
+
+    <img src="./image/tp_closehint.png" width="600">
+
+- 힌트 확인 및 숨기기
+    - 힌트 확인 버튼 클릭 시 Text가 힌트 숨기기로 변경, 정답이 공개됨(BackColor -> Blue)
+    - 힌트 숨기기 버튼 클릭 시 Text가 힌트 확인으로 변경, 정답 비공개
+
+    <img src="./image/tp_openhint.png" width="600">
+
+- 저장
+    - 현재까지의 진행사항을 저장
+
+    <img src="./image/tp_save.png" width="600">
+
+- 불러오기
+    - 마지막으로 저장된 게임 진행사항을 로드
+
+    <img src="./image/tp_load.png" width="600">
+
+- 새 게임시작
+    - 현재까지 했던 내용을 초기화하고 새 게임진행
+    
+    <img src="./image/tp_newgame.png" width="600">
+
+- 정답 확인
+    - 정답이 틀린 경우 정답확인 횟수만 카운트, 오답 메세지창 팝업
+
+    <img src="./image/tp_check.png" width="600">
+
+    - 정답이 맞는 경우 정답확인 횟수와 완료게임 횟수 가 카운트, 정답 메세지 창 팝업
+
+    <img src="./image/tp_finish.png" width="600">

@@ -222,11 +222,21 @@ namespace sudoku
                 for (int col = 0; col < 9; col++)
                 {
                     answerButtons[row, col].Text = board[row, col].ToString();
-                    answerButtons[row, col].BackColor = puzzle[row, col] == 0 ? Color.LightBlue : Color.LightGray;
-                    answerButtons[row, col].ForeColor = puzzle[row, col] == 0 ? Color.Black : Color.DarkBlue;
+
+                    if (hintMap[row, col] == 0)  // 사용자가 입력할 수 있는 칸
+                    {
+                        answerButtons[row, col].BackColor = Color.LightBlue;
+                        answerButtons[row, col].ForeColor = Color.Black;
+                    }
+                    else
+                    {
+                        answerButtons[row, col].BackColor = Color.LightGray;
+                        answerButtons[row, col].ForeColor = Color.DarkBlue;
+                    }
                 }
             }
         }
+
 
         void HideAnswer()
         {
